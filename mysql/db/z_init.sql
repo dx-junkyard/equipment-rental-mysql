@@ -46,12 +46,16 @@ insert into Equipments(name, owner_id, equipment_type) values("西東京市ス�
 insert into SportEvents(name,comment) values("ボッチャ体験会/boccia trial session","どなたでも楽しめる東京オリンピック、パラリンピックで話題になった競技です");
 insert into SportEvents(name,comment) values("コーフボール体験会/korfball trial session","どなたでも楽しめる競技");
 insert into SportEvents(name,comment) values("サッカー体験会/soccer trial session","サッカー体験会");
+insert into SportEvents(name,comment) values("個人orチーム利用/personal use or team use","個人利用などの非公開の備品貸出用");
 
 --
 insert into Events(title, event_owner_id, time_from, time_to) values("西東京市体育館ボッチャ体験会６月","Uxxxxxxxxxxxxxxx01", "2023-06-01 10:00:00", "2023-06-01 12:00:00");
+insert into Events(title, event_owner_id, time_from, time_to, event_type) values("個人 or チーム貸出","Uxxxxxxxxxxxxxxx01", "2023-06-02 10:00:00", "2023-06-02 12:00:00",2);
 
 --
 insert into Include(event_id, sport_event_id) values(1,1);
+insert into Include(event_id, sport_event_id) values(1,2);
+insert into Include(event_id, sport_event_id) values(2,4);
 
 --
 insert into Participants(participant_id, event_id,invitation_code) values("UPxxxxxxxxxxxxxx01",1,"xxxxxx_invi_xxxxx");
