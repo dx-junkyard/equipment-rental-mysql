@@ -52,3 +52,8 @@ insert into Events(title, event_owner_id, time_from, time_to) values("西東京�
 
 --
 insert into Include(event_id, sport_event_id) values(1,1);
+
+--
+insert into Participants(participant_id, event_id,invitation_code) values("UPxxxxxxxxxxxxxx01",1,"xxxxxx_invi_xxxxx");
+
+
