@@ -1,5 +1,5 @@
 -- 
-insert into Owners(owner_id, name) values("Uxxxxxxxxxxxxxxx01","西東京市 スポーツ振興課/Nishitokyo-shi government office sports promotion section");
+insert into Owners(owner_id, name, counter_id) values("Uxxxxxxxxxxxxxxx01","西東京市 スポーツ振興課/Nishitokyo-shi government office sports promotion section","COUNTER_ID_ABC");
 
 
 --
@@ -42,6 +42,7 @@ insert into Equipments(name, owner_id, equipment_type) values("西東京市ス�
 insert into Equipments(name, owner_id, equipment_type) values("西東京市スポーツ振興課valleyball(1)","Uxxxxxxxxxxxxxxx01",2);
 
 
+
 --
 insert into SportEvents(name,comment) values("ボッチャ体験会/boccia trial session","どなたでも楽しめる東京オリンピック、パラリンピックで話題になった競技です");
 insert into SportEvents(name,comment) values("コーフボール体験会/korfball trial session","どなたでも楽しめる競技");
@@ -59,5 +60,8 @@ insert into IncludeSportEvents(event_id, sport_event_id) values(2,4);
 
 --
 insert into Participants(participant_id, event_id,invitation_code) values("UPxxxxxxxxxxxxxx01",1,"xxxxxx_invi_xxxxx");
+
+--
+insert into EquipmentReservations(equipment_id,event_id,renter_id,equipment_n, start_date, end_date, usage_date, comment) values(1,1,"Uxxxxxxxxx_renterid_xxxxxxxx", 2, "2023-03-05 00:00:00", "2023-03-05 23:59:59", "2023-06-01 00:00:00", "comment1");
 
 
